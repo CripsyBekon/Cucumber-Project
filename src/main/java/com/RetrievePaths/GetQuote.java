@@ -49,6 +49,7 @@ public class GetQuote {
 			Thread.sleep(3000);	
 			FinishDate.sendKeys(Keys.RETURN);
 			Thread.sleep(3000);
-			Continue.click();		
+			Continue.click();	
+			Thread.sleep(5000);
 	}
 }

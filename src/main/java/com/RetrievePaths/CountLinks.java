@@ -22,11 +22,15 @@ public class CountLinks {
 	     
 	     for (int i = 1; i<countTag.size(); i=i+1)      
 	     {      
-	         while(!countTag.get(i).getText().isEmpty()) {
-	        	 System.out.println(countTag.get(i).getText());
-		         links++;  
-	         }  
-	     }  
+	         if(countTag.get(i).getText().isEmpty()) {
+
+	         }
+	         else
+	         {
+	             System.out.println(countTag.get(i).getText());
+	            links++;               
+	         }       
+	     }    
 	     System.out.println("Total amount of menu links are:" + links);        
 	    }
 }

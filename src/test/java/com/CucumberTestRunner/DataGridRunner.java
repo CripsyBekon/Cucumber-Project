@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin= {"pretty", "html:target/cucmber-html-report"}, 
-		features ="src\\test\\java\\com\\DataGrid.feature", 
+		features ="src\\test\\java\\com\\CucumberSteps\\DataGrid.feature", 
 		glue= {"com.CucumberSteps"},
 		tags = {"@DataGridTest"},
 		dryRun= false,

@@ -15,14 +15,14 @@ import io.cucumber.java.en.When;
 public class ExcelSheetStep {
 	WebDriver driver; 
 	
-	  @Given("^the user launches a browser to visit the website$")
+	  @Given("^the user launches a browser to visit the website for excel test$")
 	  public void bootDriver() throws Throwable {
 		  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.get("https://www.qbe.com/au");
 	  }
 
-	 @When("^the user navigate to the NSW quotes page$")
+	 @When("^the user navigate to the NSW quotes page for excel test$")
 	  public void gotoQuotes() throws Throwable {
 		 //Count the amount of links on the menu
 		 CountLinks CT = PageFactory.initElements(driver,CountLinks.class);
@@ -38,14 +38,8 @@ public class ExcelSheetStep {
 		 //Test if the text matches with the title
 		 HPP.CompareTitleText(); 
 	  }
-
-	  @Then("^the user should be able to get an anonymous quote$")
-	  public void getAnonQuote() throws Throwable {
-		 GetQuote GT = PageFactory.initElements(driver,GetQuote.class);
-		 GT.getQuote("20/10/2019");
-	  }
-	  
-	  @Then("^the user should fill in the necessary information obtained from the excel sheet from \"([^\\\"]*)\" ")
+	 
+	  @Then("^the user should fill in the necessary information obtained from the excel sheet from \"([^\\\"]*)\"$")
 	  public void completeForms(String args1) throws Throwable {
 		  
 		  ReadFromExcel readFile= new ReadFromExcel("data.xlsx");
@@ -61,6 +55,9 @@ public class ExcelSheetStep {
 			 System.out.println(Usage);
 			 String postcodeData = readFile.getCellData("DataValues", "PostCode", rowNum);
 			 System.out.println(postcodeData);
+			 
+			 GetQuote GT = PageFactory.initElements(driver,GetQuote.class);
+			 GT.getQuote("20/10/2019");
 
 			WebElement ManYear = driver.findElement(By.cssSelector("#a1"));
 			ManYear.sendKeys(Year);
@@ -82,17 +79,15 @@ public class ExcelSheetStep {
 			postcodeBtn.selectByVisibleText(postcodeData);
 			WebElement Continue = driver.findElement(By.cssSelector("#button_forward"));
 			Continue.click();
-			}
+			
 			
 		  UserPreference UP = PageFactory.initElements(driver,UserPreference.class);
-		  UP.RadioInputs("6/9/1996");
-	  }
+		  UP.RadioInputs("06/09/1956");
 	  
-	  @Then("^the user will be able to get his quote and click on finish$")
-	  public void finishButton() throws Throwable {
-		  //Get Value of Final Quote
 		  FinishQuote FQ = PageFactory.initElements(driver,FinishQuote.class);
 		  FQ.QuoteValue();
-		  FQ.Finish();
-	  }  
+		  FQ.Finish();  
+		  }
+		driver.close();
+	  }
 	}

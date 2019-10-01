@@ -12,14 +12,14 @@ public class FeatureFileStep {
 	WebDriver driver; 
 	
   @Given("^the user launches a browser to visit the website$")
-  public void bootDriver() throws Throwable {
+  public void bootDriver1() throws Throwable {
 	  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	  driver = new ChromeDriver();
 	  driver.get("https://www.qbe.com/au");
   }
 
  @When("^the user navigate to the NSW quotes page$")
-  public void gotoQuotes() throws Throwable {
+  public void gotoQuotes1() throws Throwable {
 	 //Count the amount of links on the menu
 	 CountLinks CT = PageFactory.initElements(driver,CountLinks.class);
 	 CT.CountLinkTest();
@@ -36,25 +36,26 @@ public class FeatureFileStep {
   }
 
   @Then("^the user should be able to get an anonymous quote$")
-  public void getAnonQuote() throws Throwable {
+  public void getAnonQuote1() throws Throwable {
 	 GetQuote GT = PageFactory.initElements(driver,GetQuote.class);
 	 GT.getQuote("20/10/2019");
   }
   
   @Then("^the user should fill in the necessary information$")
-  public void completeForms() throws Throwable {
+  public void completeForms1() throws Throwable {
 	  VehicleDetails VD = PageFactory.initElements(driver,VehicleDetails.class);
 	  VD.FillForm("2016");
 	  
 	  UserPreference UP = PageFactory.initElements(driver,UserPreference.class);
-	  UP.RadioInputs("6/9/1996");
+	  UP.RadioInputs("06/09/1956");
   }
   
   @Then("^the user will be able to get his quote and click on finish$")
-  public void finishButton() throws Throwable {
+  public void finishButton1() throws Throwable {
 	  //Get Value of Final Quote
 	  FinishQuote FQ = PageFactory.initElements(driver,FinishQuote.class);
 	  FQ.QuoteValue();
 	  FQ.Finish();
+	  driver.close();
   }  
 }

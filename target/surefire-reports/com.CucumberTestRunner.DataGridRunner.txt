@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
-Test set: com.CucumberTestRunner.TestRunner
+Test set: com.CucumberTestRunner.DataGridRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE! - in com.CucumberTestRunner.TestRunner
-initializationError(com.CucumberTestRunner.TestRunner)  Time elapsed: 0.015 sec  <<< ERROR!
-java.lang.IllegalArgumentException: Not a file or directory: C:\Users\798015\Documents\AssignmentWorkspace\cucumber-maven-assignment\src\test\java\com\FeatureFile.feature
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE! - in com.CucumberTestRunner.DataGridRunner
+initializationError(com.CucumberTestRunner.DataGridRunner)  Time elapsed: 0.014 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Not a file or directory: C:\Users\798015\Documents\AssignmentWorkspace\cucumber-maven-assignment\src\test\java\com\DataGrid.feature
 	at cucumber.runtime.io.FileResourceIterator$FileIterator.<init>(FileResourceIterator.java:63)
 	at cucumber.runtime.io.FileResourceIterator.<init>(FileResourceIterator.java:28)
 	at cucumber.runtime.io.FileResourceIterator.createFileResourceIterator(FileResourceIterator.java:14)
