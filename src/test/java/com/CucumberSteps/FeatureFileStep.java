@@ -1,7 +1,9 @@
 package com.CucumberSteps;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;

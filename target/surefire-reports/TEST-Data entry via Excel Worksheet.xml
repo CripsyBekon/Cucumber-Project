@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Data entry via Excel Worksheet" time="294.632" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="Data entry via Excel Worksheet" time="417.221" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\798015\Documents\AssignmentWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6381273329142511341.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\798015\Documents\AssignmentWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7904496661661421310.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_211/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_211/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_211/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\798015\Downloads\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin;C:\Users\798015\AppData\Local\Microsoft\WindowsApps;;C:\Users\798015\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\798015\Downloads\eclipse-jee-2019-06-R-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,5 +60,92 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="User gets a quote via Excel Spreadsheet" classname="Data entry via Excel Worksheet" time="294.632"/>
+  <testcase name="User gets a quote via Excel Spreadsheet" classname="Data entry via Excel Worksheet" time="417.221">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#q1 .radio:nth-child(1) &gt; label&quot;}&#10;  (Session info: chrome=70.0.3538.67)&#10;  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LTAU00498&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: C:\Users\798015\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59087}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true}&#10;Session ID: 782280d1e349c349d1d53d4de989b9bd&#10;*** Element info: {Using=css selector, value=#q1 .radio:nth-child(1) &gt; label}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#q1 .radio:nth-child(1) > label"}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LTAU00498', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: C:\Users\798015\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59087}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 782280d1e349c349d1d53d4de989b9bd
+*** Element info: {Using=css selector, value=#q1 .radio:nth-child(1) > label}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.RetrievePaths.UserPreference.RadioInputs(UserPreference.java:42)
+	at com.CucumberSteps.ExcelSheetStep.completeForms(ExcelSheetStep.java:89)
+	at ✽.the user should fill in the necessary information obtained from the excel sheet from "Data.xlsx"(file:src/test/java/com/CucumberSteps/ExcelSheet.feature:7)
+</error>
+    <system-out><![CDATA[Total amount of menu links are: 28
+Text exists in page
+Test Passed for Title matching
+Manufactured Year: 2016.0
+Vehicle Brand: Ford
+Vehicle Shape: SED
+Usage Type: BUSG
+Postcode: 2007-BROADWAY
+$769.20 is the quote for 12 months
+
+
+Manufactured Year: 2012.0
+Vehicle Brand: Holden
+Vehicle Shape: WAG
+Usage Type: PPG
+Postcode: 2010-SURRY HILLS
+$1114.56 is the quote for 12 months
+
+
+Manufactured Year: 2013.0
+Vehicle Brand: Mazda
+Vehicle Shape: SED
+Usage Type: PRIV
+Postcode: 2008-DARLINGTON
+$769.20 is the quote for 12 months
+
+
+Manufactured Year: 2015.0
+Vehicle Brand: Aec
+Vehicle Shape: WAG
+Usage Type: PPG
+Postcode: 2009-PYRMONT
+$1114.56 is the quote for 12 months
+
+
+Manufactured Year: 2014.0
+Vehicle Brand: Ford
+Vehicle Shape: SED
+Usage Type: BUSG
+Postcode: 2007-BROADWAY
+$769.20 is the quote for 12 months
+
+
+Manufactured Year: 
+Vehicle Brand: 
+Vehicle Shape: 
+Usage Type: 
+Postcode: 
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f) on port 32003Only local connections are allowed.Oct 01, 2019 3:04:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
 </testsuite>

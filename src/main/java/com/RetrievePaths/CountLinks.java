@@ -27,10 +27,9 @@ public class CountLinks {
 	         }
 	         else
 	         {
-	             System.out.println(countTag.get(i).getText());
 	            links++;               
 	         }       
 	     }    
-	     System.out.println("Total amount of menu links are:" + links);        
+	     System.out.println("Total amount of menu links are: " + links);        
 	    }
 }

@@ -24,7 +24,7 @@ public class FinishQuote {
 	public void QuoteValue() throws InterruptedException {
 		WebElement Quote= driver.findElement(By.cssSelector("div.container:nth-child(6) div.qbe-content:nth-child(6) div.row div.col-sm-5 span.qbe-insert-offer-box div.panel.panel-default.panel-standout div.panel-body:nth-child(1) div.visible-md-block.visible-lg-block > span:nth-child(1)"));
 		String TotalCost= Quote.getText();
-		System.out.println(TotalCost+ "is the quote for 12 months");
+		System.out.println(TotalCost+ " is the quote for 12 months\n\n");
 		Thread.sleep(3000);
 		
 	}

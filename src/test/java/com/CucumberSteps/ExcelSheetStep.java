@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import com.ExcelFeature.ReadFromExcel;
@@ -32,7 +33,7 @@ public class ExcelSheetStep {
 		 HomePagePaths HPP = PageFactory.initElements(driver,HomePagePaths.class);
 		 HPP.homePagePaths();
 		 
-		 //Test if the text "Compulsary Third Party NSW Green Slip Insurance" exists in page
+		 //Test if the text "Compulsory Third Party NSW Green Slip Insurance" exists in page
 		 HPP.CheckIfTextExists();
 		 
 		 //Test if the text matches with the title
@@ -46,15 +47,15 @@ public class ExcelSheetStep {
 			int rowCount = readFile.getRowCount("DataValues");
 			for (int rowNum = 2;rowNum <= rowCount; rowNum++) {
 			 String Year = readFile.getCellData("DataValues", "Year", rowNum);
-			 System.out.println(Year);
+			 System.out.println("Manufactured Year: " +Year);
 			 String Brand = readFile.getCellData("DataValues", "Make", rowNum);
-			 System.out.println(Brand);
+			 System.out.println("Vehicle Brand: " +Brand);
 			 String Shape =readFile.getCellData("DataValues", "Shape", rowNum);
-			 System.out.println(Shape);
+			 System.out.println("Vehicle Shape: " +Shape);
 			 String Usage = readFile.getCellData("DataValues", "Usage", rowNum);
-			 System.out.println(Usage);
+			 System.out.println("Usage Type: " +Usage);
 			 String postcodeData = readFile.getCellData("DataValues", "PostCode", rowNum);
-			 System.out.println(postcodeData);
+			 System.out.println("Postcode: " +postcodeData);
 			 
 			 GetQuote GT = PageFactory.initElements(driver,GetQuote.class);
 			 GT.getQuote("20/10/2019");

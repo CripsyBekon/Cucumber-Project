@@ -1,7 +1,6 @@
 package com.CucumberSteps;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import com.RetrievePaths.*;
@@ -14,7 +13,8 @@ public class DataGridStep {
 	
 	  @Given("^the user launches a browser to visit the website for datagrid test$")
 	  public void bootDriver2() throws Throwable {
-		  System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+		  System.setProperty("webdriver.firefox.driver", "geckodriver.exe");
+		  System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"log.txt");
 		  driver = new FirefoxDriver();
 		  driver.get("https://www.qbe.com/au");
 	  }
@@ -29,7 +29,7 @@ public class DataGridStep {
 		 HomePagePaths HPP = PageFactory.initElements(driver,HomePagePaths.class);
 		 HPP.homePagePaths();
 		 
-		 //Test if the text "Compulsary Third Party NSW Green Slip Insurance" exists in page
+		 //Test if the text "Compulsory Third Party NSW Green Slip Insurance" exists in page
 		 HPP.CheckIfTextExists();
 		 
 		 //Test if the text matches with the title
